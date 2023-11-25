@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6015380242587911744}
   - component: {fileID: 3298611818339545300}
   - component: {fileID: 4626346360539789992}
-  - component: {fileID: 8990249184165205050}
+  - component: {fileID: 3995873183969010305}
   m_Layer: 0
   m_Name: NextPlaneCreationTrigger
   m_TagString: Untagged
@@ -82,7 +82,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8990249184165205050
+--- !u!114 &3995873183969010305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,6 +95,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planeManager: {fileID: 2123169745512780675, guid: e9c06f4f8cf80ed40be0d89445401d52, type: 3}
+  rangeWall: {fileID: 1669824042752098864, guid: ff1ba97d991e3ce4fa384bcac4b10e8a, type: 3}
+  speedWall: {fileID: 2135055191012816324, guid: 56da73f4875de1d47be0fdec2b38cf34, type: 3}
   spawnLocationObject: {fileID: 8236680190054679653}
 --- !u!1 &6110429533774611818
 GameObject:

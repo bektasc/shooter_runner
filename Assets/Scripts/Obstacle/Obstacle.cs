@@ -6,10 +6,9 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public TextMeshProUGUI _text;
-    //public GameOver gameOver;
 
     public float _obstacleLife;
-    public static int boxDestroyed;
+    public static int _boxDestroyed;
 
     private void Awake()
     {
@@ -30,7 +29,12 @@ public class Obstacle : MonoBehaviour
         if (_obstacleLife == 0 && other.gameObject.TryGetComponent(out BulletMovement spawn))
         {
             Destroy(this.gameObject);
-            boxDestroyed += 1;
+            _boxDestroyed += 1;
+        }
+        
+        if (other.gameObject.name.Equals("Player"))
+        {
+            CameraFollow.gamefinished = 1;
         }
     }
 

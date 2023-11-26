@@ -15,7 +15,7 @@ public class SpeedWall : MonoBehaviour
         {
             GameObject RangeWall = Instantiate(speedWallPrefab,
                         planeSpawnPosition +
-                        Vector3.back * Random.Range(0, 50) +
+                        Vector3.back * Random.Range(0, 20) +
                         new Vector3(Random.Range(-1, 2) * Random.Range(0, 12), 3, 0),
                         Quaternion.identity);
         }
